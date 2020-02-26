@@ -4,24 +4,29 @@ module.exports = {
     base: '/',
     theme: '@vuepress/blog',
     head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
+        ['link', {
+            rel: 'icon',
+            href: '/logo.png'
+        }]
     ],
     themeConfig: {
         sidebar: [
             '/',
         ],
-        nav: [
-            {
+        nav: [{
                 text: 'Blog',
                 link: '/',
             },
             {
                 text: 'Server',
                 link: '/server/'
+            },
+            {
+                text: 'Web',
+                link: '/web/'
             }
         ],
-        directories: [
-            {
+        directories: [{
                 id: 'blog',
                 dirname: '_post',
                 path: '/'
@@ -30,7 +35,26 @@ module.exports = {
                 id: 'server',
                 dirname: 'server',
                 path: '/server/'
+            }, {
+                id: 'web',
+                dirname: 'web',
+                path: '/web/'
             }
-        ]
+        ],
+        footer: {
+            contact: [{
+                type: 'github',
+                link: 'https://github.com/WaynePluto/blog',
+            }],
+            copyright: [{
+                    text: 'MIT Licensed | Copyright © 2020 Liuwei',
+                    link: 'http://www.liuweiblog.top',
+                },
+                {
+                    text: '豫ICP备20003537号',
+                    link: 'http://www.beian.miit.gov.cn',
+                },
+            ],
+        },
     }
 }
