@@ -24,6 +24,10 @@ module.exports = {
             {
                 text: 'Web',
                 link: '/web/'
+            },
+            {
+                text: 'Vue',
+                link: '/vue/'
             }
         ],
         directories: [{
@@ -39,6 +43,10 @@ module.exports = {
                 id: 'web',
                 dirname: 'web',
                 path: '/web/'
+            }, {
+                id: 'vue',
+                dirname: 'vue',
+                path: '/vue/'
             }
         ],
         footer: {
